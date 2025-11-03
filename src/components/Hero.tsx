@@ -13,7 +13,7 @@ export const Hero = () => {
             <img 
               src={paganLogo} 
               alt="Pagan Logo" 
-              className="w-full max-w-2xl h-auto filter drop-shadow-[0_0_40px_rgba(56,189,248,0.6)] brightness-110"
+              className="w-full max-w-2xl h-auto"
             />
           </div>
 
