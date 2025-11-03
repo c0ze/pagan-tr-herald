@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Black metal dark theme - deep blacks, blood red accents */
+    /* Black metal dark theme - deep blacks, icy blue accents */
     --background: 0 0% 4%;
     --foreground: 0 0% 95%;
 
@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 6%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 0 70% 45%;
+    --primary: 200 90% 55%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 12%;
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 0 70% 45%;
+    --accent: 200 90% 55%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 70% 45%;
@@ -35,15 +35,15 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 15%;
-    --ring: 0 70% 45%;
+    --ring: 200 90% 55%;
 
     --radius: 0.25rem;
 
     /* Custom tokens for atmospheric effects */
-    --blood-red: 0 85% 40%;
-    --crimson: 0 75% 35%;
-    --shadow-glow: 0 70% 45%;
-    --ancient-gold: 45 60% 50%;
+    --ice-blue: 200 90% 55%;
+    --frost-blue: 205 85% 45%;
+    --shadow-glow: 200 90% 55%;
+    --arctic-blue: 190 80% 60%;
   }
 }
 
