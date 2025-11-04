@@ -6,6 +6,7 @@ interface Release {
   year: number;
   description?: string;
   spotify?: string;
+  bandcamp?: string;
 }
 
 const releases: Release[] = [
@@ -14,14 +15,16 @@ const releases: Release[] = [
     type: "EP",
     year: 2024,
     description: "Latest offering from the depths of the underground",
-    spotify: "https://open.spotify.com/album/02azDsT2v1xCQ0yjLob72H"
+    spotify: "https://open.spotify.com/album/02azDsT2v1xCQ0yjLob72H",
+    bandcamp: "https://pagantr.bandcamp.com/album/acolytes"
   },
   {
     title: "Rehearsal Tape '19",
     type: "Demo",
     year: 2019,
     description: "Marking the return after years of silence",
-    spotify: "https://open.spotify.com/album/3sUQFGTH8HVpiX597Wh4H4"
+    spotify: "https://open.spotify.com/album/3sUQFGTH8HVpiX597Wh4H4",
+    bandcamp: "https://pagantr.bandcamp.com/album/rehearsal-tape-19"
   },
   {
     title: "Oz : In Transcendence",
@@ -35,7 +38,8 @@ const releases: Release[] = [
     type: "Demo",
     year: 1998,
     description: "Raw and uncompromising blackened assault",
-    spotify: "https://open.spotify.com/album/0uWo78eCphS18kjcqBWzA1"
+    spotify: "https://open.spotify.com/album/0uWo78eCphS18kjcqBWzA1",
+    bandcamp: "https://pagantr.bandcamp.com/album/heathen-upheaval"
   },
   {
     title: "Rehearsal Tape '96",
@@ -86,32 +90,60 @@ export const Discography = () => {
                   <p className="text-sm text-muted-foreground mb-4">
                     {release.description}
                   </p>
-                  {release.spotify && (
-                    <a
-                      href={release.spotify}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="mr-2 h-5 w-5"
+                  <div className="flex flex-col gap-2">
+                    {release.spotify && (
+                      <a
+                        href={release.spotify}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        <path d="M9 18V5l12-2v13" />
-                        <circle cx="6" cy="18" r="3" />
-                        <circle cx="18" cy="16" r="3" />
-                      </svg>
-                      Listen on Spotify
-                    </a>
-                  )}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mr-2 h-5 w-5"
+                        >
+                          <path d="M9 18V5l12-2v13" />
+                          <circle cx="6" cy="18" r="3" />
+                          <circle cx="18" cy="16" r="3" />
+                        </svg>
+                        Listen on Spotify
+                      </a>
+                    )}
+                    {release.bandcamp && (
+                      <a
+                        href={release.bandcamp}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mr-2 h-5 w-5"
+                        >
+                          <path d="m22 6-9.5 4-9.5-4" />
+                          <path d="m22 18-9.5-4-9.5 4" />
+                          <path d="m2.5 10 9.5 4 9.5-4" />
+                        </svg>
+                        Listen on Bandcamp
+                      </a>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
