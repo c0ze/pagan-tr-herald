@@ -29,7 +29,7 @@ export const Media = () => {
           {/* Social Links */}
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <a
-              href="https://www.youtube.com/@paganblackmetal"
+              href="https://www.youtube.com/@pagan-tr/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-6 bg-card border-2 border-border hover:border-primary transition-all duration-300 group"

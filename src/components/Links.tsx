@@ -33,7 +33,7 @@ export const Links = () => {
             </a>
 
             <a
-              href="https://www.youtube.com/@paganblackmetal"
+              href="https://www.youtube.com/@pagan-tr/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-8 bg-card border-2 border-border hover:border-primary transition-all duration-300 group"

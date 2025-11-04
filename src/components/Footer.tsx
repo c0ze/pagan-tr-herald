@@ -14,7 +14,7 @@ export const Footer = () => {
             </a>
             <span className="hidden md:inline text-primary">•</span>
             <a 
-              href="https://www.youtube.com/@paganblackmetal" 
+              href="https://www.youtube.com/@pagan-tr/"
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
