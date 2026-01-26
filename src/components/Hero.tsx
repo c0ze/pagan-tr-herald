@@ -1,8 +1,14 @@
 import paganLogo from "@/assets/pagan-logo.jpg";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-dark overflow-hidden">
+      {/* Theme toggle */}
+      <div className="absolute top-4 right-4 z-20">
+        <ThemeToggle />
+      </div>
+
       {/* Atmospheric background effect */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
       
@@ -10,10 +16,10 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-12">
           {/* Logo */}
           <div className="flex justify-center">
-            <img 
-              src={paganLogo} 
-              alt="Pagan Logo" 
-              className="w-full max-w-2xl h-auto"
+            <img
+              src={paganLogo}
+              alt="Pagan Logo"
+              className="w-full max-w-2xl h-auto dark:invert-0 invert"
             />
           </div>
 
