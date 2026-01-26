@@ -9,10 +9,38 @@ export const Hero = () => {
         <ThemeToggle />
       </div>
 
+      {/* Fog effect - only visible in dark mode */}
+      <div className="fogwrapper absolute inset-0 z-0 pointer-events-none dark:block hidden">
+        <div id="foglayer_01" className="fog">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+        <div id="foglayer_02" className="fog">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+        <div id="foglayer_03" className="fog">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+      </div>
+
+      {/* Mist effect - only visible in light mode */}
+      <div className="mistwrapper absolute inset-0 z-0 pointer-events-none dark:hidden block">
+        <div id="mistlayer_01" className="mist">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+        <div id="mistlayer_02" className="mist">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+      </div>
+
       {/* Atmospheric background effect */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30" />
-      
-      <div class="fog" className="container mx-auto px-4 py-20 relative z-10">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30 z-[1]" />
+
+      <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           {/* Logo */}
           <div className="flex justify-center">
