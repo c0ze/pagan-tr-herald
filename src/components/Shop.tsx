@@ -13,8 +13,8 @@ export const Shop = () => {
                         Purchase our physical artifacts directly from the void.
                     </p>
 
-                    <Card className="bg-black/50 border-primary/20 max-w-2xl mx-auto overflow-hidden group hover:border-primary/50 transition-all duration-300">
-                        <CardHeader className="bg-muted/10 border-b border-white/5 pb-4">
+                    <Card className="bg-card border-primary/20 max-w-2xl mx-auto overflow-hidden group hover:border-primary/50 transition-all duration-300">
+                        <CardHeader className="bg-muted/10 border-b border-border pb-4">
                             <CardTitle className="flex items-center justify-center gap-3 font-mono text-xl text-primary">
                                 <Terminal className="w-6 h-6" />
                                 <span>SSH Shop</span>
@@ -25,7 +25,7 @@ export const Shop = () => {
                                 Connect to our terminal-based shop to browse and purchase available CDs and merchandise.
                             </p>
 
-                            <div className="bg-black/80 rounded-lg p-6 border border-white/10 relative group-hover:border-primary/30 transition-colors">
+                            <div className="bg-black rounded-lg p-6 border border-primary/20 relative group-hover:border-primary/30 transition-colors">
                                 <code className="font-mono text-xl text-green-500 break-all sm:break-normal">
                                     ssh -p 2222 shop.pagan.tr
                                 </code>
