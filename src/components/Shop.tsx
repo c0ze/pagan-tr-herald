@@ -27,7 +27,7 @@ export const Shop = () => {
 
                             <div className="bg-black rounded-lg p-6 border border-primary/20 relative group-hover:border-primary/30 transition-colors">
                                 <code className="font-mono text-xl text-green-500 break-all sm:break-normal">
-                                    ssh -p 2222 shop.pagan.tr
+                                    ssh shop.pagan.tr
                                 </code>
                             </div>
 
